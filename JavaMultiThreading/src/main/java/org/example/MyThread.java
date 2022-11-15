@@ -5,9 +5,9 @@ public class MyThread implements Runnable{
     public void run() {
 //        System.out.println("inside MyThread.....");
         for(int i = 1; i < 11; i++){
-            System.out.println("Value of i : " + i);
+            System.out.println("My Thread : " + i);
             try {
-                Thread.sleep(1000);
+                Thread.sleep(500);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
